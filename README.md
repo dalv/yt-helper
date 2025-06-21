@@ -24,6 +24,19 @@ YOUTUBE_API_KEY='Your-API-Key-Here'
 
 (Provide examples on how to use your tool here.)
 
+### Fetching Video Transcripts
+
+This project uses the official YouTube Data API to download caption tracks when
+available. To retrieve a transcript you must authenticate with a Google account
+that has permission to access the captions for the given video. Run:
+
+```bash
+npm run dev -- <videoId>
+```
+
+If captions are found, they will be saved as `<videoId>.srt` in the project
+directory.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
